@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundiales de futbol</title>
+</head>
+<body>
+    
+    <h2>Programa de loos mundiales de futbol de la FIFA</h2>
+
+    <script>
+
+        function Imprimir(frase) 
+        {
+            document.write(frase + "<br><br><br>")
+        }
+        
+        var anhoMundial;
+        var limite = parseInt(prompt("Ingrese el limite de anhos de mundiales")); 
+        
+        Imprimir("<b> Ciclo hecho con for: </b>");
+
+        for (anhoMundial = 1930; anhoMundial<= limite; anhoMundial = anhoMundial+ 4)
+        {
+            Imprimir("Los mundiales de futbol de la FIFA son: " + anhoMundial);
+        }
+
+        Imprimir("FIN"); 
+
+        Imprimir("<b> Ciclo hehco con while: </b>"); 
+
+        anhoMundial = 1930; 
+
+        while ( anhoMundial <=limite)
+        {
+            Imprimir("Los mundiales de futbol de la FIFA son: " + anhoMundial);
+            anhoMundial = anhoMundial +4; 
+        }
+
+        Imprimir("FIN")
+
+        
+
+
+    </script>
+
+</body>
+</html>

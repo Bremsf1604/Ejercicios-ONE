@@ -1,0 +1,55 @@
+<meta charset="UTF-8">
+
+<h3>PROGRAMA DE ANIOS</h3>
+
+<script>
+
+    function SaltarLinea() //Funcion para hacer un salto de linea. 
+    {
+        document.write("<br>");
+    }
+
+    function Imprimir(frase) //Funcion para imprimir. 
+    {
+        document.write(frase)
+        SaltarLinea();
+    }
+
+    var anho = 2022;
+    
+    Imprimir("<h4> Edades de los hombres: </h4>");
+
+    Imprimir("Juan tiene: " + (anho -2000) + " anios");
+    Imprimir("Pedro tiene: " + (anho-1995) + " anios");
+    Imprimir("Carlos tiene: " + (anho-2005) + " anios");
+
+    var edadJuan = 22;
+    var edadPedro = 27;
+    var edadCarlos = 17; 
+
+    promedio = (edadJuan+edadPedro+edadCarlos)/3;
+    
+    Imprimir("El promedio de las edades de los hombres es: " + Math.round(promedio));
+
+    Imprimir("<h4> Edades de las  mujeres: </h4>");
+
+    anho = 2022
+
+    Imprimir("Jimena tiene:" + (anho-2010) + " anios"); 
+    Imprimir("Paola tine: " + (anho-1995) + "anios");
+    Imprimir("Laura tiene: " + (anho-2005) +" anios"); 
+
+    var edadJimena = 10;
+    var edadPaola = 25;
+    var edadLaura = 15;
+
+    var nombre1 = "Jimena";
+    var nombre2 = "Paola";
+    var nombre3 = "Laura";
+
+    promedio = (edadJimena+edadPaola+edadLaura)/3;
+
+    Imprimir("El promedio de las edades de " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es: " + Math.round(promedio));
+
+</script>
+

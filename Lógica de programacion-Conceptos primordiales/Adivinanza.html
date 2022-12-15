@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+    <script>
+
+        function Imprimir(frase) 
+        {
+            document.write(frase + "<br><br><br>")
+        }
+        
+        var numeroPensado = 3; ///Math.round(Math.random()*10);
+        var intentos = 3;
+        var contador = 1;
+
+        while (contador <= intentos) 
+        {
+            var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+            
+            if (numeroPensado == numeroLanzado)
+            {
+                alert("usted acertó, en el intento " + contador + " el número pensado era " + numeroPensado);
+                break;
+            }
+            
+            else 
+            {
+                alert("usted erró");
+            }
+            contador++;
+        }
+        
+        if (numeroPensado == numeroLanzado)
+        {
+            Imprimir("usted acertó, en el intento " + contador + " el número pensado era " + numeroPensado);
+        }
+        
+        else 
+        {
+            Imprimir("usted erró, el número pensado era " + numeroPensado);
+        }
+        
+        Imprimir("Fin");
+
+    </script> 
+</body>
+</html>
+
+

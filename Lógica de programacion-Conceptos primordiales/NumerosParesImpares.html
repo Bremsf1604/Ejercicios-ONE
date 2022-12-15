@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros Pares/Impares</title>
+</head>
+<body>
+
+    <h3>CALCULAR NUMEROS PARES E IMPARES</h3>
+
+    <script>
+
+        function Imprimir(frase) 
+        {
+            document.write(frase + "<br><br><br>")
+        }
+
+        var limite = parseInt(prompt ("Ingrese el limite de numeros para saber cuales son los pares e impares"));
+        var numero = 1; 
+
+        while(numero <= limite)
+        {
+            if (numero%2 == 0)
+            {
+                Imprimir(numero + " es par");
+            }
+            else
+            {
+                Imprimir(numero + " es impar");
+            }
+            
+            numero ++;
+
+        }
+
+        // var numero;
+        // var limite = parseInt(prompt ("Ingrese el limite de numeros para saber cuales son los pares e impares"));
+
+        // for(numero= 1;numero<= limite; numero++)
+        // {
+        //     if (numero%2 == 0)
+        //     {
+        //         Imprimir(numero + " es par");
+        //     }
+        //     else
+        //     {
+        //         Imprimir(numero + " es impar");
+        //     }
+        // }
+
+        // Imprimir ("FIN");
+
+    </script>
+</body>
+</html>
